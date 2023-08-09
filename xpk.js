@@ -1,4 +1,4 @@
-const Antenna = require('iotex-antenna');
+const { Antenna } = require('iotex-antenna');
 
 async function main() {
   const antenna = new Antenna("https://babel-api.mainnet.iotex.io");
