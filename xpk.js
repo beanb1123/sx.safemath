@@ -1,6 +1,6 @@
 const Antenna = require('iotex-antenna');
 
-(async () => {
+async function main() {
   const antenna = new Antenna("https://babel-api.mainnet.iotex.io");
 
   // recover the whole wallet from a single private key
@@ -13,4 +13,5 @@ const Antenna = require('iotex-antenna');
     address: wallet.address
   });
   console.log(accountDetails);
-})();
+}
+main();
